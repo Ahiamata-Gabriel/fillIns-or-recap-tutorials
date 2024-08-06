@@ -1,0 +1,36 @@
+* {
+  --headerFontSize: 2rem;
+  --headerPadding: 0.5rem;
+  --footerFontSize: 1rem;
+  --FooterPadding: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightgreen;
+  font-size: var(--footerFontSize);
+  padding: var(--headerPadding);
+  text-align: center;
+}
+
+main {
+  background-color: lightblue;
+  font-size: 1.5rem;
+  text-align: center;
+  height: calc(
+    100dvh - var(--headerFontSize) - (2 * var(--headerPadding)) -
+      var(--footerFontSize) - (2 * var(--FooterPadding))
+  );
+  overflow-y: auto;
+}
+
+footer {
+  background-color: lightgreen;
+  font-size: var(--footerFontSize);
+  padding: var(--FooterPadding);
+  text-align: center;
+}
